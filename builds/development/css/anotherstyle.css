@@ -33,4 +33,27 @@ pre.center{
     width: 60%;
     border: #F2773F solid;
 }
+div.containTable{
+    height: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #d1d1d1;
+}
+div.containTable2{
+    height: 200px;
+    position: relative;
+    /*1 make the container element to be relatively positioned, which declares it to be a container for absolutely positioned elements*/
+    border: 2px solid #000000;
+}
+div.containTable2 p{
+    margin: 0;
+    position: absolute;
+    /*2 make the element itself to be absolute positioned*/
+    top:50%;
+    /*3 place it halfway down the container using 'top:50%'*/
+    transform: translate(0,-50%)
+    /*4 use a translation to move the element up by half its own height, the 50% in translate(0,-50%) refers to the height of the element itself*/
+}
+
+
 
